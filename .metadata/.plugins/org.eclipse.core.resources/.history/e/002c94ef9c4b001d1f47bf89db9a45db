@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>06_SimpleForm.html</title>
+</head>
+<body>
+
+<form>
+	<fieldset>
+		<legend>회원 가입</legend>
+		<ol>
+			<li>
+				<label for='name'>이름</label>
+				<input type='text' id='name'>
+			</li>
+			<li>
+				<label for='gender'>성별</label>
+				<input type='radio' id='gender'> 남자
+				<input type='radio'> 여자
+			</li>
+		</ol>
+	</fieldset>
+</form>
+
+</body>
+</html>

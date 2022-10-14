@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>06_SimpleForm.html</title>
+</head>
+<body>
+
+<form>
+	<fieldset>
+		<legend>회원 가입</legend>
+		<ol>
+			<li>
+				<label for='name'>이름</label>
+				<input type='text' id='name'>
+			</li>
+			<li>
+				<label for='gender'>성별</label>
+				<input type='radio' checked> 남자
+				<input type='radio'> 여자
+			</li>
+			<li>
+				<label for='job'>직업</label>
+				<select>
+					<option>개발자</option>
+					<option>프로그래머</option>
+					<option>코더</option>
+					<option>노가다</option>
+				</select>
+			</li>
+		</ol>
+	</fieldset>
+</form>
+
+</body>
+</html>
