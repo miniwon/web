@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div><a href='http://www.nate.com'>네이트1</a></div>
+<div><a href='http://www.nate.com'>네이트2</a></div>
+<div><a href='http://www.nate.com'>네이트3</a></div>
+<div><a href='http://www.nate.com'>네이트4</a></div>
+
+<iframe name='leftFrm' width='400' height='450'></iframe>
+<iframe name='rightFrm' width='400' height='450'></iframe>
+</body>
+</html>

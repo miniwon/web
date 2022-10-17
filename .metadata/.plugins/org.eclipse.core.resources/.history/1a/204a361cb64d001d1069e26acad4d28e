@@ -1,0 +1,45 @@
+<!-- 
+	element (tag)
+	- block 요소		: 
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title> 카레만들기 </title>
+</head>
+<body>
+
+<img src='/WebUI/images/sample/curry.jpg' width='250' height='154'>
+<img src='../images/sample/curry.jpg' alt='이것은 인도 커리'>
+<!-- 상대 경로에서 . 1개는 자기 자신의 폴더, .. 2개는 부모 폴더 -->
+
+<h1>커리(Curry) 재료</h1>
+<ul>
+<li>카레 가루 100g</li>
+<li>닭가슴살 200g</li>
+<li>감자 1개</li>
+<li>양파 1/2개</li> 
+<li>당근 1/2개</li>
+</ul>
+
+<!--
+	ul(unorder list)	: 순번이 없는 리스트
+	ol(order list)		: 순번이 있는 리스트
+-->
+
+<h2>커리(Curry) 만드는 법</h2>
+<ol type='i'>
+<li>카레 가루 8큰술에 물 6큰술을 넣어 풀어놓는다.</li>
+<li>닭가슴살, 감자, 양파, 당근 등을 따로 중불에 살짝 볶는다.</li>
+<li>볶아 놓은 재료를 카레를 풀어놓은 물과 함께 냄비에 넣고 물 2컵을 부은 후 15분 정도 끓인다.</li>
+</ol>
+양파
+외떡잎식물 백합목 백합과의 두해살이풀
+당근
+쌍떡잎식물 산형화목 미나리과의 두해살이풀.
+		
+		
+</body>
+</html>
