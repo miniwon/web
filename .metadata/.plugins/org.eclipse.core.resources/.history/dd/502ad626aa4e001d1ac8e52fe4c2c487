@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 03_for_z.html </title>
+
+<script type="text/javascript">
+
+	document.write("<table border='2'>");
+	
+	document.write('<tr>');
+	for(var i = 0; i < 3; i++) {
+		document.write('<td>한 칸</td>');
+	}
+	document.write('</tr>');
+
+	document.write("</table>");
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
