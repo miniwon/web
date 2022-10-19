@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+ //var td = document.getElementsByTagName('td');
+ 
+ var td_click = function(){
+	alert('해당 메뉴의 가격은 원입니다');	
+}

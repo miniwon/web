@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+window.onload = function() {
+var tds = document.getElementsByTagName("td");
+ 
+ td.onclick = function() {
+	alert('어우');
+}
+
+
+}
+

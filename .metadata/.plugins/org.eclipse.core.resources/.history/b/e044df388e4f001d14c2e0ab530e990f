@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+window.onload = function() {
+var tds = document.getElementsByTagName("td");
+
+for(let i = 0; i < tds.length; i++) {
+	tds[i].onclick = function(){
+		alert(tds[i].getAttribute('data-price'));
+	}
+} 
+
+}
+

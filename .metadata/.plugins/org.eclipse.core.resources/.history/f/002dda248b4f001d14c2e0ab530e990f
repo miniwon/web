@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+var td = document.getElementsByTagName('td');
+var td_click = function(){
+	alert(td.dataset.price);	
+}
+
+
+

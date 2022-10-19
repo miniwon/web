@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+ 
+ var td = document.getElementsByTagName('td');
+ 
+ td.onclick = function(){
+	alert("확인");
+}

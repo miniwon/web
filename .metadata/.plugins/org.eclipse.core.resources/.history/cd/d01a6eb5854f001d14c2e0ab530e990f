@@ -1,0 +1,6 @@
+@charset "UTF-8";
+table#tbl { border: 2px solid; }
+
+td { height: 60px; width: 100px; color:yellow; }
+
+tr#first { background:blue; }

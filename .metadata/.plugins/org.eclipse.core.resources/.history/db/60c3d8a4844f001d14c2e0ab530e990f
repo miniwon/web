@@ -1,0 +1,2 @@
+@charset "UTF-8";
+body> table#tbl { border: 3; }

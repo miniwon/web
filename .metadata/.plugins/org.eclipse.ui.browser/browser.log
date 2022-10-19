@@ -1,0 +1,4 @@
+
+10월 19, 2022 16:57:46.947 NEW SESSION
+10월 19, 2022 16:57:46.947 [12556:15076:1019/165746.946:ERROR:device_event_log_impl.cc(214)] [16:57:46.946] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+10월 19, 2022 16:58:43.50 [12556:1476:1019/165843.050:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater

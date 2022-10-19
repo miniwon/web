@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="2022-10-19_2css.css">
+</head>
+<body>
+
+<table id='tbl'>
+	<tr><td>커피</td><td>녹차</td></tr>
+	<tr><td>케익</td><td>빵</td></tr>
+	<tr><td>과자</td><td>초코렛</td></tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+ var td = document.getElementsByTagName('td');
+ 
+ var td_click = function(td){
+	var price = td.getAttribute('data-price');
+	alert('해당 메뉴의 가격은 ' + price + '원입니다');	
+}

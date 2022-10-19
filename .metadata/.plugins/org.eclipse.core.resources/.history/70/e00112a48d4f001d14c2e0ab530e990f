@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+ 
+var td = document.getElementsByTagName
+ 
+ td.onclick = function() {
+	alert('어우');
+}
+
+
+
+
