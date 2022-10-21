@@ -10,16 +10,26 @@ h3 {
 	color: #AA3355;
 }
 
-h4 + p { color: yellowgreen; }
+/*
+	+ 선택자(a + b):	a 태그 옆에 있는 b 태그를 선택하라
+				 	자손 관계가 아닌 자매 관계
+*/
+/* h4 + p { color: yellowgreen; } */
+
+/*
+	~ 선택자(a ~ b):	a 태그 옆에 있는 b 태그 모두를 선택하라
+				 	자손 관계가 아닌 자매 관계
+*/
+/* h4 + p { color: green; } */
 
 /*
 
-	nth-child	: p 요소 중에서 몇 번째
-	nth-of-type	: p 요소의 부모의 자식 중에서 몇 번째
+	p:nth-child		: p의 부모 안의 모든 요소 중 N번째 요소 / p의 부모의 자식 중에서 몇 번째
+	p:nth-of-type	: p의 부모 안의 p 요소 중 N 번째 요소 / p 요소 중에서 몇 번째
 	
 */
-p:nth-child(1) { background: pink; }
-p:nth-of-type(1) { background: purple; }
+p:nth-child(2) { color: pink; }
+p:nth-of-type(2) { background: purple; }
 
 </style>
 </head>

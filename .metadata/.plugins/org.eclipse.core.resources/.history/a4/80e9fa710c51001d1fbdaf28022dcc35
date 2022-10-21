@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 새로 열려진 창 </title>
+<script type="text/javascript">
+/*********************************
+ 	열어 준 창의 요소를 찾을 때
+ 	열어 준 창: opener
+ *********************************/
+window.onload = function(){
+	var sel = frm.site;
+	for(var i=0; i<sel.length;i++){
+		sel[i].onclick = function(){
+//			alert(this.value);
+			switch(this.value){
+			case '0': location.href='http://www.daum.net'; break;
+			}
+		}
+	}
+}
+</script>
+</head>
+<body>
+	<form name="frm">
+		<input type="radio" name="site" value='0'> 다음 <br>
+		<input type="radio" name="site" value='1' > 네이버 <br>
+		<input type="radio" name="site" value='2'> 네이트 <br>
+	</form>
+</body>
+</html>

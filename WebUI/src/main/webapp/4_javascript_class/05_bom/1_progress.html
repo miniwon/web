@@ -13,8 +13,17 @@
 <script>
 	var progress = document.getElementById("progress");
 	var current = 0;
-
 	
+	// 함수를 통으로 인자로 넣었다
+	setInterval(function (){progress.value=++current; if(current==100){}}, 100);
+//	setTimeout(updateProgress, 2000);
+
+// 	function updateProgress(){
+// 		progress.value = ++current;
+// 		if(current==100){
+// 			//clearInterval()
+// 		}
+// 	}
 	
 	
 

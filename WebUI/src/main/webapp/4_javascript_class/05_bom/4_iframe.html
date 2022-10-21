@@ -4,7 +4,14 @@
 <meta charset="UTF-8">
 <title> 부분독립페이지 </title>
 <script type="text/javascript">
-
+window.onload = function(){
+	var sel = frm.site;
+	for(var i=0; i<sel.length;i++){
+		sel[i].onclick = function(){
+			ifrm.fm.result.value=this.value;
+		}
+	}
+}
 </script>
 </head>
 <body>
