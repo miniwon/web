@@ -8,9 +8,27 @@
 //  즉시 실행 함수
 //	 - 함수를 변수에 직접 할당하는 것이 아니라 함수의 결과물을 할당하기 위해 즉시 실행 함수를 사용(?)
 //	- 추후에 클로져와 관련
+/* var f = function(num){
+	document.write("num = " + num + "<br>");
+}
+var func = f(10); */
+var func =	function(num){
+			document.write("num = " + num + "<br>");
+			return num;
+			}(10);
+document.write(func + "<hr>");
 
-
-
+//-----------------------------------------------------------------------
+// 리턴값으로 함수도 지정이 가능하다
+var byensu =	function(num){
+				return	function(){
+						num--;
+						document.write("num = " + num + "<br>");
+						};
+				}(10);
+document.write(byensu + "<hr>");
+byensu();
+byensu();
 </script>
 </head>
 <body>

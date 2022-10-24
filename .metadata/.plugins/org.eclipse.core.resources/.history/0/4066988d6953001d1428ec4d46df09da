@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+ $(function(){
+	$("#hideButton").click(function(){
+	$("#intro > img").fadeOut(2000);
+});
+});

@@ -1,0 +1,6 @@
+/**
+ * 
+ */
+ $("#hideButton").click(function(){
+	$("intro").fadeOut(1000);
+})

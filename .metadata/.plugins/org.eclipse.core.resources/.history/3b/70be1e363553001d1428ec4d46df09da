@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>01_prototype2.html</title>
+<script type="text/javascript">
+/*
+	이름, 국어 점수, 영어 점수, 수학 점수를 처리하는 클래스 선언
+	해당 클래스 안에는 국어, 영어, 수학 점수의 총점을 구하는 함수를 가진 클래스 선언
+	클래스 Student 선언
+ */
+</script>
+</head>
+<body>
+
+</body>
+</html>

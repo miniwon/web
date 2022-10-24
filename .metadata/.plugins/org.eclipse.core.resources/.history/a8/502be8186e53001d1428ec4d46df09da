@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+$(function() {
+	$("#hideButton").click(function() {
+		$("#intro > img").fadeOut(2000);
+	});
+	$("#showButton").click(function() {
+		$("#intro > img").fadeIn(2000);
+	});
+	$("#toggleButton").click(function(){
+		$("#intro > img").toggle(1000);
+	});
+});

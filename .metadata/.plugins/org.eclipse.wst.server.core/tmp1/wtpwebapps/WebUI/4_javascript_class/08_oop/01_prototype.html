@@ -8,15 +8,17 @@
 <script>
 
 //0. 	클래스 선언 -  생성자로 초기화하기
+// 클래스 의도로 선언할 거라면 대문자로 시작, 함수로 선언할 거라면 소문자로 시작
 function Student(id, name, dept){
 	this.id = id;
 	this.name = name;
 	this.dept = dept;
 	
+// this를 사용함으로 인해 멤버변수가 된다
 	this.display =function(){
 		var str  = "학번: "+id;
-		str += "/이름:" + name;
-		str += "/학과:" + dept + "<br/>"; 
+		str += " / 이름: " + name;
+		str += " / 학과: " + dept + "<br/>"; 
 		return   str;
 	}
 }

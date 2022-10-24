@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+ $(function(){
+	$(".header .menu li img").hover(function(){
+		$(this).attr("src", src.replace("off", "on"));
+	}, function(){
+		$(this).attr("src", src.replace("on","off"));
+		
+	});
+	
+});	// $

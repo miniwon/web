@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;WebUI/src/main/webapp/5_jquery_class/NewFile.html&apos; to &apos;0_숙제.html&apos;" description="Rename resource &apos;NewFile.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/5_jquery_class/NewFile.html" name="0_숙제.html" stamp="1666589564075" updateReferences="true"/>
+</session>
