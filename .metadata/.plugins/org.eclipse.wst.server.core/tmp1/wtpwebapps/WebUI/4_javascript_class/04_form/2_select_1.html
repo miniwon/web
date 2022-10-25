@@ -4,7 +4,26 @@
 <meta charset="UTF-8">
 <title> 이벤트 예제 2 </title>
 <script type="text/javascript">
+window.onload = function(){
+	var mango 	= document.frm.mango;
+	var avocad 	= document.frm.avocado; 
+	
+	mango.onchange 		= calc; // **** calc() 절대안됨.
+	avocado.onchange 	= calc;
+	
+	
+	
+	function calc(){
+		 // alert(mango.value*4000);
+		frm.total.value = mango.value*4000 + avocado.value*5000;
+		
+		
+	}
+	
+}
+	
 </script>
+
 	
 </head>
 <body>

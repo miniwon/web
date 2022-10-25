@@ -1,0 +1,124 @@
+@CHARSET "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+.header{
+	background: rgb(255,240,204);
+	width:100%;
+	height: 150px;
+	padding: 40px 0 0 42px;
+	*zoom:1;
+	border-bottom: 3px solid #ffffff;
+}
+.menubar{
+	height:38px;
+}
+.menubar li{
+	list-style-type:none;
+	float:left;
+	padding:0 0 0 8px;
+}
+.menubar li a{
+	float:left;
+}
+.menubar li a img{
+	width:161px;
+	height:38px;
+	border:none;
+}
+#logo{
+	width:200px;
+	position:absolute;
+	top:0;
+	left:10px;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+}
+/* 
+#topdiv {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+ */
+#bottomdiv {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+td.menu {
+	padding: 10px;
+	text-align: center;
+}
+
+.menutbl {
+	margin: 10px;
+	padding: 0px;
+	border: 1px dotted black;
+	border-radius: 10px;
+	font-family: 'Nanum Gothic', serif;
+}
+
+.menutbl tr td {
+	padding-top: 30px;
+}
+
+.menutbl tr td img {
+	padding-bottom: 5px;
+}
+
+.menutbl tr td select {
+	margin: 10px;
+	padding: 3px;
+}
+
+#menutitle {
+	height: 100px;
+	background-color: #EEEAE3;
+	font-family: 'Jeju Gothic', serif;
+}
+
+#titleText {
+	font-size: 30px;
+	text-align: left;
+	padding-left: 100px;
+	padding-bottom: 10px;
+}
+
+.menus {
+	margin: 10px;
+}
+
+#listTable {
+	margin: 10px;
+	padding: 0px;
+	border-collapse: collapse;
+}
+
+#listtitle {
+	height: 100px;
+	font-family: 'Jeju Gothic', serif;
+	background-color: #EEEAE3;
+}
+
+#listtr {
+	height: 50px;
+	border-bottom: 1px dotted;
+	font-family: 'Nanum Gothic', serif;
+}
+
+#listTable td {
+	text-align: center;
+	border-bottom: 1px dotted;
+}
+
+#totallist {
+	font-family: 'Nanum Gothic', serif;
+	height: 50px;
+}

@@ -6,6 +6,52 @@
 </head>
 <body>
 
+<script src = '../lib/jquery-3.6.1.js' type="text/javascript"></script>
+	<script type = "text/javascript"> 
+	
+	
+	
+	$(document).ready(function(){
+		
+	$('.fontSize button:eq(0)').bind('click', function() {
+		$('#txt').animate({
+			fontSize : '+=10px'		
+	});	
+		
+	});	
+		
+	$('.fontSize button:eq(1)').bind('click', function() {
+		$('#txt').animate({
+			fontSize : '-=10px'		
+		});			
+	});
+
+	 $("#fontstyle").on("change",function(){
+		 $('#txt').css({
+				 'font-family' : $(this).val() 
+		 
+		 
+	    });
+		 
+		 
+		 
+		 
+			
+			
+		});
+
+	  });
+	
+	
+		
+
+	
+	
+
+	
+	
+	</script>
+
 	<div id='wrap'>
 		<dl>
 				<dt> 글씨크기 </dt>

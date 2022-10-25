@@ -5,15 +5,33 @@
 <title></title>
 <script type="text/javascript">
 
+window.onload = function(){
+	
+	myForm.txt0.value = '하하';
+	
+	document.getElementById('btn').onclick = function() {
+		for(var i=0; i<4; i++){
+			// 각각의 텍스트필드에 data-0 / ~ 1 , 2, 3, 4~~~~ 
+			myForm['txt'+ i].value = 'data'+'-'+ i;
+		}
+		 alert('ok')
+		
+	}
+}
+	 
+		
+
 </script>
 </head>
 <body>
 	<form name='myForm'>
-		첫번째 :  <input type='text' name='txt0'><br/>
-		두번째 :  <input type='text' name='txt1'><br/>
-		세번째 :  <input type='text' name='txt2'><br/>
-		네번째 :  <input type='text' name='txt3'><br/>
-		<input type='button' value='값지정'  id='btn'>
+		이름 :  <input type='text' name='txt0'><br/>
+		나이 :  <input type='text' name='txt1'><br/>
+		번호 :  <input type='text' name='txt2'><br/>
+		주소 :  <input type='text' name='txt3'><br/>
+		<input type='button' value='이게뭔데'  id='btn'>
+		
+		 
 	</form>
 </body>
 </html>

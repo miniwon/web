@@ -12,6 +12,31 @@
 	.borderBlue { border : 3px dotted blue; }
 </style>
 
+<script src = '../lib/jquery-3.6.1.js' type="text/javascript"></script>
+	<script type = "text/javascript"> 
+	
+	$(function(){
+		
+		
+		
+		$("li:nth-child(1)").addClass('bg');
+		
+		$('#food > li:nth-child(3)').addClass('bg');
+		
+		$(' #food > li:contains("튀김")').addClass('borderBlue');
+		
+		$( 'ul:eq(1)>li:nth-child(2)' ).addClass( 'bg' );
+		
+		
+		
+	});
+	
+	
+	
+	</script>
+	
+	
+
 </head>
 <body>
 		<h1>제이쿼리 시작</h1>

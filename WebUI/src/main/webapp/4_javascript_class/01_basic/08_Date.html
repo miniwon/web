@@ -5,19 +5,36 @@
 <title>Date 객체</title>
 <script type="text/javascript">	
  	
-	var d = new Date('2023/08/15');
+	var d = new Date('2023/08/13');
 	document.writeln( d  + '<br/>');
-	document.writeln( d.getYear()  + '<br/>');
+	document.writeln( d.getYear()  + '<br/>'); //####
 	document.writeln( d.getFullYear()  + '<br/>');
 	document.writeln( d.getMonth()  + '<br/>');
 	document.writeln( d.getDate()  + '<br/>');
 	document.writeln( d.getDay()  + '<br/>');
+	
+	
+	var today = new Date();
+	document.writeln( today  + '<br/>');
+	document.writeln( today.getYear()  + '<br/>'); //####
+	document.writeln( today.getFullYear()  + '<br/>');
+	document.writeln( today.getMonth()  + '<br/>');
+	document.writeln( today.getDate()  + '<br/>');
+	document.writeln( today.getDay()  + '<br/>');
 
+	
+	var day = new Date(2025, 4 , 5, 12, 31, 10  );
+	
+	document.writeln ( day + '<br/>');
+	
+	
+	var today = new Date();
+ 	today.setMonth (today.getMonth() - 3)
+// 	document.writeln( today.toDateString() + '<br/>')
+	today.setDate (today.getDate() + 20)
+	document.writeln( today.toDateString() + '<br/>')
+	// 현재 날짜에서 20일을 더하면 
 
-	
-	
-	
-	
 	</script>
 
 </head>

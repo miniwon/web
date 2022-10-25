@@ -33,8 +33,56 @@ window.onload = function(){
 	for( var j=year-5;  j<= year+5; j++){
 		frm.y.add( new Option(j, j));				// 만들고 브라우저 F12에서 Elements로 확인 : Option(j)와 Option(j,j) 차이
 	}
+	
+	for( var j=1;  j<= 12 ; j++){
+		frm.m.add( new Option(j, j));				// 만들고 브라우저 F12에서 Elements로 확인 : Option(j)와 Option(j,j) 차이
+	}
+	
+	for( var k=1;  k<= lastDays[month]; k++){
+		frm.d.add( new Option(k, k));				// 만들고 브라우저 F12에서 Elements로 확인 : Option(j)와 Option(j,j) 차이
+	}
+	
+	frm.y.value = year;
+	frm.m.value = month+1;
+	frm.d.value = date;
 
+	frm.y.onchange = cal; 
+	frm.m.onchange = cal;
+	frm.d.onchange = cal;
+	
+	
+	function cal(){
+		
+	var year = frm.y.value;
+	var month = frm.m.value;
+	var date = frm.d.value;
+	var today1 = new Date(year, month-1, date);
+	var day1 = today1.getDay(); 
+	var day = ['일','월','화','수','목','금','토'];
+	var dayko = day[day1];
+	frm.w.value=dayko;
+		
+	
+	
+	 if (year%4==0) {
+		 lastDays[1] = 30;
+	 }else{
+	 lastDays[1] = 28;
+	 }
+	 
+	 frm.d.options.length=0;
+	
+	for( var k=1;  k<= lastDays[month-1]; k++){
+		frm.d.add( new Option(k, k));				// 만들고 브라우저 F12에서 Elements로 확인 : Option(j)와 Option(j,j) 차이
+	}
+	
+	frm.d.value = date;
+
+		
+		
+	}
 }
+
 </script>
 
 </head>
