@@ -1,8 +1,0 @@
-/**
- * 
- */
- 
- 
- var td_click = function(){
-	alert('OK');	
-}

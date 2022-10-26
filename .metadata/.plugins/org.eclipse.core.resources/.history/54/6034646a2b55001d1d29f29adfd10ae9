@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MOM's TOUCH</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src='../lib/jquery-3.6.1.min.js' type="text/javascript"></script>
+<script src="./jquery.js" charset="utf-8">
+	
+</script>
+</head>
+<body>
+	<table id="firstPage">
+		<tr id="menutitle">
+			<td colspan="2"><img src="./img/menu/메인.jpg" id="mainPicture" /></td>
+		</tr>
+		<tr>
+			<td colspan="2"><strong>카드 전용 주문 기기입니다.</strong></td>
+		</tr>
+		<tr>
+			<td colspan="2">현금 결제는 카운터에서 진행해 주시기 바랍니다.<br> <br> <br></td>
+		</tr>
+		<tr>
+			<td class="heretogo"><img src="./img/menu/here_off.png"
+				id="firstHere" /></td>
+			<td class="heretogo"><img src="./img/menu/togo_off.png"
+				id="firstTogo" /></td>
+		</tr>
+	</table>
+
+	<table id="board">
+		<tr>
+			<td><table id="headerTbl">
+					<tr>
+						<td><img src="./img/menu/맘스터치로고.png" id="logo" /></td>
+						<td></td>
+						<td></td>
+						<td><table id="belowMenu">
+								<tr>
+									<td id="here"><img src="./img/menu/here_off.png"
+										class="belowMenu" /></td>
+									<td id="togo"><img src="./img/menu/togo_off.png"
+										class="belowMenu" /></td>
+									<td id="reset"><img src="./img/menu/reset_off.png"
+										class="belowMenu" /></td>
+								</tr>
+							</table></td>
+
+					</tr>
+					<tr id="menuTab">
+						<td><a class="rollover"><img src="./img/menu/bg_off.png"
+								class="menuTab" /></a></td>
+						<td><a class="rollover"><img src="./img/menu/ch_off.png"
+								class="menuTab" /></a></td>
+						<td><a class="rollover"><img src="./img/menu/dr_off.png"
+								class="menuTab" /></a></td>
+					</tr>
+				</table></td>
+			<td>
+			<table id="orderCount">
+			<tr>
+			<td> 사진과 가격이 나와요 </td>
+			<td> <input type="number" min="1" max="100" step="1" value="1" width="15em">개수를 받을 거예요
+			
+			</tr>
+			</table>
+		</tr>
+		<tr>
+			<td>
+				<table class="htb">
+
+					<tr>
+						<td id='hmenu1' class='hmenu'><img
+							src="./img/buger/간장마늘싸이버거.png" /> <br /> <span id="hlabel1"
+							value='간장마늘싸이버거' single='5500' set='6500' svalue='간장마늘싸이버거세트'>간장마늘싸이버거</span>
+							<br /> <span id="hprice1"><img src="./img/menu/dan.png" />5500원<img
+								src="./img/menu/set.png" />6500원</span><br /></td>
+						<td id='hmenu2' class='hmenu'><img
+							src="./img/buger/갈릭바베큐치킨버거.png" /> <br /> <span id="hlabel2"
+							value='갈릭바베큐치킨버거' single='5500' set='6900' svalue='갈릭바베큐치킨버거세트'>갈릭바베큐치킨버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5500원<img
+								src="./img/menu/set.png" />6900원</span><br /></td>
+						<td id='hmenu3' class='hmenu'><img
+							src="./img/buger/디럭스불고기버거.png" /> <br /> <span id="hlabel3"
+							value='디럭스불고기버거' single='5800' set='7200' svalue='디럭스불고기버거세트'>디럭스불고기버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5800원<img
+								src="./img/menu/set.png" />7200원</span><br /></td>
+						<td id='hmenu4' class='hmenu'><img
+							src="./img/buger/딥치즈버거.png" /> <br /> <span id="hlabel4"
+							value='딥치즈버거' single='5800' set='6800' svalue='딥치즈버거세트'>딥치즈버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5800원<img
+								src="./img/menu/set.png" />6800원</span><br /></td>
+					</tr>
+					<tr>
+						<td id='hmenu5' class='hmenu'><img
+							src="./img/buger/딥치즈싸이버거.png" /> <br /> <span id="hlabel5"
+							value='딥치즈싸이버거' single='5400' set='6800' svalue='딥치즈싸이버거세트'>딥치즈싸이버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5400원<img
+								src="./img/menu/set.png" />6800원</span><br /></td>
+						<td id='hmenu6' class='hmenu'><img
+							src="./img/buger/불고기버거.png" /> <br /> <span id="hlabel6"
+							value='불고기버거' single='5800' set='6800' svalue='불고기버거세트'>불고기버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5800원<img
+								src="./img/menu/set.png" />6800원</span><br /></td>
+						<td id='hmenu7' class='hmenu'><img
+							src="./img/buger/불싸이버거.png" /> <br /> <span id="hlabel7"
+							value='불싸이버거' single='5700' set='6900' svalue='불싸이버거세트'>불싸이버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5700원<img
+								src="./img/menu/set.png" />6900원</span><br /></td>
+						<td id='hmenu8' class='hmenu'><img
+							src="./img/buger/새우불고기버거.png" /> <br /> <span id="hlabel8"
+							value='새우불고기버거' single='5300' set='6400' svalue='새우불고기버거'>새우불고기버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5500원<img
+								src="./img/menu/set.png" />6000원</span><br /></td>
+					</tr>
+					<tr>
+						<td id='hmenu9' class='hmenu'><img
+							src="./img/buger/쉬림프싸이플렉스버거.png" /> <br /> <span id="hlabel9"
+							value='쉬림프싸이플렉스버거' single='5400' set='6400' svalue='쉬림프싸이플렉스버거'>쉬림프싸이플렉스버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5400원<img
+								src="./img/menu/set.png" />6400원</span><br /></td>
+						<td id='hmenu10' class='hmenu'><img
+							src="./img/buger/싸이버거.png" /> <br /> <span id="hlabel10"
+							value='싸이버거' single='5800' set='6900' svalue='싸이버거세트'>싸이버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5800원<img
+								src="./img/menu/set.png" />6900원</span><br /></td>
+						<td id='hmenu11' class='hmenu'><img
+							src="./img/buger/싸이플렉스버거.png" /> <br /> <span id="hlabel11"
+							value='싸이플렉스버거' single='5400' set='6400' svalue='싸이플렉스버거세트'>싸이플렉스버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5400원<img
+								src="./img/menu/set.png" />6400원</span><br /></td>
+						<td id='hmenu12' class='hmenu'><img
+							src="./img/buger/야채통통치킨버거.png" /> <br /> <span id="hlabel12"
+							value='야채통통치킨버거' single='5700' set='6400' svalue='야채통통치킨버거세트'>야채통통치킨버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5700원<img
+								src="./img/menu/set.png" />6400원</span><br /></td>
+					</tr>
+					<tr>
+						<td id='hmenu13' class='hmenu'><img
+							src="./img/buger/양념치킨싸이버거.png" /> <br /> <span id="hlabel13"
+							value='양념치킨싸이버거' single='5700' set='6700' svalue='양념치킨싸이버거세트'>양념치킨싸이버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5700원<img
+								src="./img/menu/set.png" />6700원</span><br /></td>
+						<td id='hmenu14' class='hmenu'><img
+							src="./img/buger/어메이징매콤마요버거.png" /> <br /> <span id="hlabel14"
+							value='어메이징매콤마요버거' single='5600' set='6900' svalue='어메이징매콤마요버거세트'>어메이징매콤마요버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5600원<img
+								src="./img/menu/set.png" />6900원</span><br /></td>
+						<td id='hmenu15' class='hmenu'><img
+							src="./img/buger/언빌리버블버거.png" /> <br /> <span id="hlabel15"
+							value='언빌리버블버거' single='5900' set='7200' svalue='언빌리버블버거세트'>언빌리버블버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />5900원<img
+								src="./img/menu/set.png" />7200원</span><br /></td>
+						<td id='hmenu16' class='hmenu'><img
+							src="./img/buger/에그불고기버거.png" /> <br /> <span id="hlabel16"
+							value='에그불고기버거' single='6200' set='7800' svalue='에그불고기버거세트'>에그불고기버거</span>
+							<br /> <span><img src="./img/menu/dan.png" />6200원<img
+								src="./img/menu/set.png" />7800원</span><br /></td>
+					</tr>
+					<tr>
+						<td id='cmenu1' class='cmenu'><img
+							src="./img/chicken/간장마늘떡강정.png" /> <br /> <span id="clabel1"
+							value='간장마늘떡강정' single='8500'>간장마늘떡강정</span> <br /> <span>8500원</span><br /></td>
+						<td id='cmenu2' class='cmenu'><img
+							src="./img/chicken/간장마늘싸이순살.png" /> <br /> <span id="clabel2"
+							value='간장마늘싸이순살' single='9500'>간장마늘싸이순살</span> <br /> <span>9500원</span><br /></td>
+						<td id='cmenu3' class='cmenu'><img
+							src="./img/chicken/간장마늘치킨.png" /> <br /> <span id="clabel3"
+							value='간장마늘치킨' single='9700'>간장마늘치킨</span> <br /> <span>9700원</span><br /></td>
+						<td id='cmenu4' class='cmenu'><img
+							src="./img/chicken/군옥수수뿌치.png" /> <br /> <span id="clabel4"
+							value='군옥수수뿌치' single='8700'>군옥수수뿌치</span> <br /> <span>8700원</span><br /></td>
+
+					</tr>
+					<tr>
+						<td id='cmenu5' class='cmenu'><img
+							src="./img/chicken/닭강정트리오.png" /> <br /> <span id="clabel5"
+							value='닭강정트리오' single='8900'>닭강정트리오</span> <br /> <span>8900원</span><br /></td>
+						<td id='cmenu6' class='cmenu'><img
+							src="./img/chicken/맘스양념싸이순살.png" /> <br /> <span id="clabel6"
+							value='맘스양념싸이순살' single='8700'>맘스양념싸이순살</span> <br /> <span>8700원</span><br /></td>
+						<td id='cmenu7' class='cmenu'><img
+							src="./img/chicken/반반치킨.png" /> <br /> <span id="clabel7"
+							value='반반치킨' single='7800'>반반치킨</span> <br /> <span>7800원</span><br /></td>
+						<td id='cmenu8' class='cmenu'><img
+							src="./img/chicken/치즈뿌치(체다).png" /> <br /> <span id="clabel8"
+							value='치즈뿌치(체다)' single='9500'>치즈뿌치(체다)</span> <br /> <span>9500원</span><br /></td>
+
+					</tr>
+					<tr>
+						<td id='dmenu1' class='dmenu'><img
+							src="./img/drink/레몬에이드.png" /> <br /> <span id="dlabel1"
+							value='레몬에이드' single='3600'>레몬에이드</span> <br /> <span
+							id="dprice1" value='3600'>3600원</span><br /></td>
+						<td id='dmenu2' class='dmenu'><img src="./img/drink/마운틴듀.png" />
+							<br /> <span id="dlabel2" value='마운틴듀' single='2600'>마운틴듀</span>
+							<br /> <span id="dprice2" value='2600'>2600원</span><br /></td>
+						<td id='dmenu3' class='dmenu'><img src="./img/drink/미린다.png" />
+							<br /> <span id="dlabel3" value='미린다' single='2400'>미린다</span> <br />
+							<span id="dprice3" value='2400'>2400원</span><br /></td>
+						<td id='dmenu4' class='dmenu'><img
+							src="./img/drink/오렌지주스.png" /> <br /> <span id="dlabel4"
+							value='오렌지주스' single='2600'>오렌지주스</span> <br /> <span
+							id="dprice4" value='2600'>2600원</span><br /></td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table id="orderTbl">
+					<caption>
+						<strong>주문 내역</strong>
+					</caption>
+					<thead>
+						<tr>
+							<th>제품명</th>
+							<th>수량</th>
+							<th>금액</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<th colspan='2'>총합 : <input type='text' id='total' /> 원
+							<th><input type='button' value='주문하기' id='btn' />
+						</tr>
+					</tfoot>
+					<tbody>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<table class="check">
+		<tr>
+			<td class="m1"><img src="./img/menu/togo_off.png" /></td>
+			<td class="m2"><img src="./img/menu/togo_off.png" /></td>
+			<td class="m3"><img src="./img/menu/togo_on.png" /></td>
+		</tr>
+	</table>
+
+</body>
+</html>

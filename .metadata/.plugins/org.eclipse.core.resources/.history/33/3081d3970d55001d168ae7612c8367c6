@@ -1,0 +1,164 @@
+$(function() {
+
+	// 초기화면 구성을 위한 가리기
+	$(".dmenu").hide();
+	$(".cmenu").hide();
+	$(".hmenu").hide();
+	$("#headerTbl").hide();
+	$(".htb").hide();
+	$(".last").hide();
+
+	// 첫 화면에서 포장 or 매장 선택
+	$('.heretogo:eq(0)').click(function() {
+		alert("매장");
+		$("#firstPage").hide();
+		$("#headerTbl").show();
+		$(".hmenu").show();
+		$(".htb").show();
+		$(".last").show();
+		var srcHere = $('.belowMenu:eq(0)').attr('src');
+		$('.belowMenu:eq(0)').attr("src",srcHere.replace("off", "on"));
+		var srcTogo = $('.belowMenu:eq(1)').attr('src');
+		$('.belowMenu:eq(1)').attr("src",srcTogo.replace("on", "off"));
+		var srcBg = $('.menuTab:eq(0)').attr('src');
+		$('.menuTab:eq(0)').attr("src",srcBg.replace("off", "on"));
+		var srcCh = $('.menuTab:eq(1)').attr('src');
+		$('.menuTab:eq(1)').attr("src",srcCh.replace("on", "off"));
+		var srcDr = $('.menuTab:eq(2)').attr('src');
+		$('.menuTab:eq(2)').attr("src",srcDr.replace("on", "off"));
+	});
+	$('.heretogo:eq(1)').click(function() {
+		alert("포장");
+		$("#firstPage").hide();
+		$("#headerTbl").show();
+		$(".hmenu").show();
+		$(".htb").show();
+		$(".last").show();
+		var srcHere = $('.belowMenu:eq(0)').attr('src');
+		$('.belowMenu:eq(0)').attr("src",srcHere.replace("on", "off"));
+		var srcTogo = $('.belowMenu:eq(1)').attr('src');
+		$('.belowMenu:eq(1)').attr("src",srcTogo.replace("off", "on"));
+		var srcBg = $('.menuTab:eq(0)').attr('src');
+		$('.menuTab:eq(0)').attr("src",srcBg.replace("off", "on"));
+		var srcCh = $('.menuTab:eq(1)').attr('src');
+		$('.menuTab:eq(1)').attr("src",srcCh.replace("on", "off"));
+		var srcDr = $('.menuTab:eq(2)').attr('src');
+		$('.menuTab:eq(2)').attr("src",srcDr.replace("on", "off"));
+	});
+
+	// 상단에서 포장과 매장 변경
+	$('#here').click(function() {
+		alert("매장 식사로 변경합니다");
+		var srcHere = $('.belowMenu:eq(0)').attr('src');
+		$('.belowMenu:eq(0)').attr("src",srcHere.replace("off", "on"));
+		var srcTogo = $('.belowMenu:eq(1)').attr('src');
+		$('.belowMenu:eq(1)').attr("src",srcTogo.replace("on", "off"));
+	});
+	$('#togo').click(function() {
+		alert("포장으로 변경합니다")
+		var srcHere = $('.belowMenu:eq(0)').attr('src');
+		$('.belowMenu:eq(0)').attr("src",srcHere.replace("on", "off"));
+		var srcTogo = $('.belowMenu:eq(1)').attr('src');
+		$('.belowMenu:eq(1)').attr("src",srcTogo.replace("off", "on"));
+	});
+	
+	// 상단의 첫화면 버튼 누르면 초기 화면으로 리셋
+	$('#reset').click(function() {
+		var result = confirm("첫 화면으로 돌아가시겠습니까?<br>주문 목록이 초기화됩니다.");
+		if (result) { // yes
+		$(".dmenu").hide();
+		$(".cmenu").hide();
+		$(".hmenu").hide();
+		$("#headerTbl").hide();
+		$(".htb").hide();
+		$(".last").hide();
+		$("#firstPage").show();
+		}
+
+	});
+
+	// 버거를 누르면 햄버거 메뉴만 보이고 치킨/음료 없앤 뒤 하얀 버튼으로 변경
+	$('.menuTab:eq(0)').click(function() { //햄버거
+		alert("버거 누름");
+		$(".hmenu").show();
+		$(".dmenu").hide();
+		$(".cmenu").hide();
+		var srcBg = $('.menuTab:eq(0)').attr('src');
+		$('.menuTab:eq(0)').attr("src",srcBg.replace("off", "on"));
+		var srcCh = $('.menuTab:eq(1)').attr('src');
+		$('.menuTab:eq(1)').attr("src",srcCh.replace("on", "off"));
+		var srcDr = $('.menuTab:eq(2)').attr('src');
+		$('.menuTab:eq(2)').attr("src",srcDr.replace("on", "off"));
+	});
+	$('.menuTab:eq(1)').click(function() {
+		alert("치킨 누름");
+		$(".dmenu").hide();
+		$(".hmenu").hide();
+		$(".cmenu").show();
+		var srcBg = $('.menuTab:eq(0)').attr('src');
+		$('.menuTab:eq(0)').attr("src",srcBg.replace("on", "off"));
+		var srcCh = $('.menuTab:eq(1)').attr('src');
+		$('.menuTab:eq(1)').attr("src",srcCh.replace("off", "on"));
+		var srcDr = $('.menuTab:eq(2)').attr('src');
+		$('.menuTab:eq(2)').attr("src",srcDr.replace("on", "off"));
+	});
+	$('.menuTab:eq(2)').click(function() {
+		alert("음료 누름");
+		$(".dmenu").show();
+		$(".hmenu").hide();
+		$(".cmenu").hide();
+		var srcBg = $('.menuTab:eq(0)').attr('src');
+		$('.menuTab:eq(0)').attr("src",srcBg.replace("on", "off"));
+		var srcCh = $('.menuTab:eq(1)').attr('src');
+		$('.menuTab:eq(1)').attr("src",srcCh.replace("on", "off"));
+		var srcDr = $('.menuTab:eq(2)').attr('src');
+		$('.menuTab:eq(2)').attr("src",srcDr.replace("off", "on"));
+	});
+
+	$('.hmenu img').click(function() {
+
+		window.open("main2.html", "",
+			"width =500 , height =600")
+
+		alert("눌림")
+
+	});
+
+
+	$('.cmenu span').click(function() {
+		var cn = $(this).text();
+		alert(cn)
+		var tr = $('<tr/>');
+
+		var td1 = $('<td>' + cn + '</td>')
+
+		tr.append(td1)
+
+		$('#listtr').append(tr)
+	});
+
+
+	$('.dmenu img').click(function() {
+
+
+		alert("눌림")
+
+	});
+
+	$('.m1').click(function() {
+
+
+
+		alert("단품 선택")
+
+	});
+	$('.m2').click(function() {
+		alert("세트 선택")
+
+	});
+
+
+
+
+})
+

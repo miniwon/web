@@ -1,0 +1,240 @@
+$(function() {
+	
+	
+		
+
+	// 초기화면 구성을 위한 가리기
+	$(".dmenu").hide();
+	$(".cmenu").hide();
+	$(".hmenu").hide();
+	$("#headerTbl").hide();
+	$(".htb").hide();
+	$("#orderTbl").hide();
+	$(".check").hide();
+
+	// 첫 화면에서 포장 or 매장 선택
+	$('.heretogo:eq(0)').click(function() {
+		$("#firstPage").hide();
+		$("#headerTbl").show();
+		$(".hmenu").show();
+		$(".htb").show();
+		$("#orderTbl").show();
+		var srcHere = $('.belowMenu:eq(0)').attr('src');
+		$('.belowMenu:eq(0)').attr("src", srcHere.replace("off", "on"));
+		var srcTogo = $('.belowMenu:eq(1)').attr('src');
+		$('.belowMenu:eq(1)').attr("src", srcTogo.replace("on", "off"));
+		var srcBg = $('.menuTab:eq(0)').attr('src');
+		$('.menuTab:eq(0)').attr("src", srcBg.replace("off", "on"));
+		var srcCh = $('.menuTab:eq(1)').attr('src');
+		$('.menuTab:eq(1)').attr("src", srcCh.replace("on", "off"));
+		var srcDr = $('.menuTab:eq(2)').attr('src');
+		$('.menuTab:eq(2)').attr("src", srcDr.replace("on", "off"));
+	});
+	$('.heretogo:eq(1)').click(function() {
+		$("#firstPage").hide();
+		$("#headerTbl").show();
+		$(".hmenu").show();
+		$(".htb").show();
+		$("#orderTbl").show();
+		var srcHere = $('.belowMenu:eq(0)').attr('src');
+		$('.belowMenu:eq(0)').attr("src", srcHere.replace("on", "off"));
+		var srcTogo = $('.belowMenu:eq(1)').attr('src');
+		$('.belowMenu:eq(1)').attr("src", srcTogo.replace("off", "on"));
+		var srcBg = $('.menuTab:eq(0)').attr('src');
+		$('.menuTab:eq(0)').attr("src", srcBg.replace("off", "on"));
+		var srcCh = $('.menuTab:eq(1)').attr('src');
+		$('.menuTab:eq(1)').attr("src", srcCh.replace("on", "off"));
+		var srcDr = $('.menuTab:eq(2)').attr('src');
+		$('.menuTab:eq(2)').attr("src", srcDr.replace("on", "off"));
+	});
+
+	// 상단에서 포장과 매장 변경
+	$('#here').click(function() {
+		var result = confirm("매장 식사로 변경하시겠습니까?");
+		if (result) { // yes
+			var srcHere = $('.belowMenu:eq(0)').attr('src');
+			$('.belowMenu:eq(0)').attr("src", srcHere.replace("off", "on"));
+			var srcTogo = $('.belowMenu:eq(1)').attr('src');
+			$('.belowMenu:eq(1)').attr("src", srcTogo.replace("on", "off"));
+		}
+	});
+	$('#togo').click(function() {
+		var result = confirm("포장으로 변경하시겠습니까?");
+		if (result) { // yes
+			var srcHere = $('.belowMenu:eq(0)').attr('src');
+			$('.belowMenu:eq(0)').attr("src", srcHere.replace("on", "off"));
+			var srcTogo = $('.belowMenu:eq(1)').attr('src');
+			$('.belowMenu:eq(1)').attr("src", srcTogo.replace("off", "on"));
+		}
+	});
+
+	// 상단의 첫화면 버튼 누르면 초기 화면으로 리셋
+	$('#reset').click(function() {
+		var result = confirm("첫 화면으로 돌아가시겠습니까?\n주문 목록이 초기화됩니다.");
+		if (result) { // yes
+			$(".dmenu").hide();
+			$(".cmenu").hide();
+			$(".hmenu").hide();
+			$("#headerTbl").hide();
+			$(".htb").hide();
+			$("#orderTbl").hide();
+			$("#firstPage").show();
+		}
+
+	});
+
+	// 버거를 누르면 햄버거 메뉴만 보이고 치킨/음료 없앤 뒤 하얀 버튼으로 변경
+	$('.menuTab:eq(0)').click(function() { //햄버거
+		$(".hmenu").show();
+		$(".dmenu").hide();
+		$(".cmenu").hide();
+		var srcBg = $('.menuTab:eq(0)').attr('src');
+		$('.menuTab:eq(0)').attr("src", srcBg.replace("off", "on"));
+		var srcCh = $('.menuTab:eq(1)').attr('src');
+		$('.menuTab:eq(1)').attr("src", srcCh.replace("on", "off"));
+		var srcDr = $('.menuTab:eq(2)').attr('src');
+		$('.menuTab:eq(2)').attr("src", srcDr.replace("on", "off"));
+	});
+	$('.menuTab:eq(1)').click(function() {
+		$(".dmenu").hide();
+		$(".hmenu").hide();
+		$(".cmenu").show();
+		var srcBg = $('.menuTab:eq(0)').attr('src');
+		$('.menuTab:eq(0)').attr("src", srcBg.replace("on", "off"));
+		var srcCh = $('.menuTab:eq(1)').attr('src');
+		$('.menuTab:eq(1)').attr("src", srcCh.replace("off", "on"));
+		var srcDr = $('.menuTab:eq(2)').attr('src');
+		$('.menuTab:eq(2)').attr("src", srcDr.replace("on", "off"));
+	});
+	$('.menuTab:eq(2)').click(function() {
+		$(".dmenu").show();
+		$(".hmenu").hide();
+		$(".cmenu").hide();
+		var srcBg = $('.menuTab:eq(0)').attr('src');
+		$('.menuTab:eq(0)').attr("src", srcBg.replace("on", "off"));
+		var srcCh = $('.menuTab:eq(1)').attr('src');
+		$('.menuTab:eq(1)').attr("src", srcCh.replace("on", "off"));
+		var srcDr = $('.menuTab:eq(2)').attr('src');
+		$('.menuTab:eq(2)').attr("src", srcDr.replace("off", "on"));
+	});
+
+	$('.hmenu').click(function() {
+		
+		$(".check").show();
+		$(".dmenu").hide();
+		$(".cmenu").hide();
+		$(".hmenu").hide();
+		$("#headerTbl").hide();
+		$(".htb").hide();
+		$(".last").hide();
+		var img = $(this).find('img').attr("src")
+		$('.check img:first').attr('src', img);
+		var name = $(this).find('span').attr("value")
+		var sname = $(this).find('span').attr("svalue")
+		var price = $(this).find('span').attr("single")
+		var setprice = $(this).find('span').attr("set")
+		var count = 1;
+		
+		
+		
+		
+		$('.m2').click(function() {
+		var tr = $('<tr/>')
+		var td1 = $('<td width="150">' + name + '</td>')
+		var td2 = $('<td width="100">' + count + '</td>')
+		var td3 = $('<td width="100">' + price + '</td>')
+		$(".last").show();	
+		tr.append(td1)
+		tr.append(td2)
+		tr.append(td3)
+		$(".check").hide();
+		$('#list').append(tr)
+		alert('s')
+		
+		$("#firstPage").hide();
+		$("#headerTbl").show();
+		$(".hmenu").show();
+		$(".htb").show();
+		$(".last").show();
+		
+		
+		
+		
+		});
+		
+		$('.m3').click(function() {
+		var tr = $('<tr/>')
+		var ts1 = $('<td width="150">' + sname + '</td>')
+		var ts2 = $('<td width="100">' + count + '</td>')
+		var ts3 = $('<td width="100">' + setprice + '</td>')
+		$(".last").show();	
+		
+		tr.append(ts1)
+		tr.append(ts2)
+		tr.append(ts3)
+
+		$('#bk').append(tr)
+		$(".check").hide();
+		
+		$("#firstPage").hide();
+		$("#headerTbl").show();
+		$(".hmenu").show();
+		$(".htb").show();
+		$(".last").show();
+		
+			
+		});
+		
+		
+		});
+
+
+	$('.cmenu').click(function() {
+		
+		var name = $(this).find('span').attr("value")
+		var price = $(this).find('span').attr("single")
+		var count = 1;
+		var tr = $('<tr/>')
+		var td1 = $('<td>' + name + '</td>')
+		var td2 = $('<td>' + count + '</td>')
+		var td3 = $('<td>' + price + '</td>')
+			
+		tr.append(td1)
+		tr.append(td2)
+		tr.append(td3)
+		$(".check").hide();
+		$('#orderTbl tbody').append(tr)
+		
+
+
+	})
+	
+	$('.dmenu').click(function() {
+		
+		
+		var name = $(this).find('span').attr("value")
+		var price = $(this).find('span').attr("single")
+		var count = 1;
+		var tr = $('<tr/>')
+		var td1 = $('<td width="150">' + name + '</td>')
+		var td2 = $('<td width="100">' + count + '</td>')
+		var td3 = $('<td width="100">' + price + '</td>')
+			
+		tr.append(td1)
+		tr.append(td2)
+		tr.append(td3)
+		$(".check").hide();
+		
+		
+		$('#orderTbl tbody').append(tr)
+		
+		var co = $("#list > td3").text
+		
+	})
+	
+
+
+
+
+})
+

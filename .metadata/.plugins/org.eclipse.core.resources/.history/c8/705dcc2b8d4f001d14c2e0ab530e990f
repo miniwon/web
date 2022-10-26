@@ -1,6 +1,0 @@
-@charset "UTF-8";
-#tbl { border: 2px solid; }
-
-td { height: 60px; width: 100px; background: lightyellow; }
-
-#tbl > tr.first { background:blue; }

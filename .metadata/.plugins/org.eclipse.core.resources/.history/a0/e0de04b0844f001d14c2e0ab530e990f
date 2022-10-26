@@ -1,3 +1,0 @@
-@charset "UTF-8";
-#tbl { border: 3; }
-body { background: yellow; }

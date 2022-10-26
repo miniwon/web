@@ -1,0 +1,8 @@
+$(function() {
+
+	var topDiv = $(".tabSet");
+	var anchors = topDiv.find("ul.tabs > li > a");
+	var panelDivs = topDiv.find("div.panels > div.panel");
+	
+	anchors.show();
+});

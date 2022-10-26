@@ -1,0 +1,7 @@
+$(function(){
+	
+	$("#info").tabs({
+		active:1,
+		event: "mouseover"
+	});
+});

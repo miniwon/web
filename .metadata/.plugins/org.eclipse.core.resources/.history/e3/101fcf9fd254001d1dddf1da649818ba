@@ -1,0 +1,6 @@
+$(function(){
+	
+	$("#bio h3").css({"cursor":"pointer"});
+	
+
+})
