@@ -38,9 +38,13 @@ table#firstPage, table#headerTbl, table.htb, table#orderCount {
 	padding-bottom: 0px;
 	line-height: 0px;
 }
+#orderCount{
+	width: 500px;
+	height: 200px;
+}
 #board #orderTbl {
 	position:absolute;
-	top: 180px;
+	top: 200px;
 }
 #orderTbl strong {
 	font-size: 30px;
@@ -50,5 +54,8 @@ table#firstPage, table#headerTbl, table.htb, table#orderCount {
 	color: white;
 }
 #orderTbl th, td{
+	width: 15em;
+}
+#orderCount td {
 	width: 15em;
 }
