@@ -1,6 +1,0 @@
-/**
- * 
- */
- $("#hideButton").click(function(){
-	$("#intro").hide();
-});

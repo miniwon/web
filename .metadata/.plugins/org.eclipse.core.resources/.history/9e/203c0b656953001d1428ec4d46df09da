@@ -1,8 +1,0 @@
-/**
- * 
- */
- $(function(){
-	$("#hideButton").click(function(){
-	$("#intro").hide();
-});
-});

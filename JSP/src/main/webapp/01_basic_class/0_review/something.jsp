@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-  <%@ page import="member.dao2.*" %>  
+  <%@ page import="member.dao.*" %>  
 <%
 	// 0. method="post"일 경우 한글 처리
 	request.setCharacterEncoding("utf-8");
