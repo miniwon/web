@@ -23,7 +23,8 @@ pageEncoding="UTF-8"%>
 			numGuesses=0;								// 정답 입력한 횟수 초기화
 			
 		// 첫 시행이 아닌 경우: 입력받은 적이 있기 때문에 guess에 값이 있다	
-		} else {
+		} else {a
+			
 			int value=Integer.parseInt(guess);			// 입력받은 숫자가 저장된 String guess를 int형으로 변환
 			
 			// 입력값과 정답이 같으면
