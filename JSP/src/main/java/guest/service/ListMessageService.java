@@ -69,8 +69,7 @@ public class ListMessageService {
 		// 나의 식
 		pageTotalCount = (int)Math.ceil(totalRecCount/(double)countPerPage);
 		
-		
-		
+
 		return pageTotalCount;
 	}
 	
